@@ -7,7 +7,8 @@ const cleanParagraph = myParagraph
   .replaceAll(",", "")
   .replaceAll(":", "")
   .replaceAll(";", "")
-  .replaceAll("\n", " ");
+  .replaceAll("\n", " ")
+  .toLowerCase(); // change into lowercase for consistency
 
 // split paragraph string into an array using space
 const paragraphArray = cleanParagraph.split(" ");
